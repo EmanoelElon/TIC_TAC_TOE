@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stage {
+  text-align: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+
+  background-color: beige;
+  border: 1px solid lightgray;
+
+  display: inline-block;
+}
+
+.o {
+  position: relative;
+}
+
+.o:after {
+  content: "\2B55";
+  font-size: 50px;
+  line-height: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.x {
+  position: relative;
+}
+
+.x:after {
+  content: "\274C";
+  font-size: 50px;
+  line-height: 100px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
